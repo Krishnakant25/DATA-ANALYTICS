@@ -1,0 +1,85 @@
+{
+  "name": "sql_query_executer",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "sql_query"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d62eb7b2-e880-4ef1-996b-7447c4ad290e",
+      "name": "When Executed by Another Workflow"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "{{ $json.sql_query }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        208,
+        0
+      ],
+      "id": "974c66b0-e468-45c7-a790-496679cdd566",
+      "name": "Execute a SQL query",
+      "credentials": {
+        "postgres": {
+          "id": "eCObayQ9qmOjMM1H",
+          "name": "Postgres account 3"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## SQL_Query_Executer\n-- Executes the SQL statement necessary to fix the identified database issue.\n-- SQL is provided dynamically from the previous workflow step.\n",
+        "height": 336,
+        "width": 544
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -64,
+        -128
+      ],
+      "id": "d9d08b94-10a1-4c20-88af-05248786ed32",
+      "name": "Sticky Note"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Execute a SQL query",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "de72fafe-f3d0-4879-8001-10ecd4f57eea",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "80506d3448078bcf0bb2e0bcf69531cdc076409df54bd01c6e846b8a70b9afaa"
+  },
+  "id": "0pVN5G05q5UeOMA4",
+  "tags": []
+}
