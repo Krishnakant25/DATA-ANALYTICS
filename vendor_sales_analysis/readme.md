@@ -133,8 +133,9 @@ ELSE IF (turnover_rate > 4x annually):
 ELSE:
     → Order optimal quantity only
     
-4. Inventory Optimization Protocol
-📊Quarterly Review Process:
+4. Inventory Optimisation Protocol📊
+  
+Quarterly Review Process:
 
 Phase 1: Identification (Week 1)
 - Flag products with sales-to-purchase ratio < 0.8
