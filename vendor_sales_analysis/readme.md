@@ -75,7 +75,9 @@ Note: Non-overlapping intervals = Statistically significant difference
 
 
 Critical Business Implication:
+
 ❌ Do NOT cut low-volume vendors → Would eliminate 10.39% margin advantage
+
 ✅ Maintain dual strategy → Top vendors for cash flow + Low vendors for profitability
 
 #### 5. Slow-Moving Inventory: $2.71M Opportunity
@@ -152,6 +154,7 @@ Phase 3: Prevention (Ongoing)
 - SKU sunset policy for chronic underperformers
   
 5. Strategic Vendor Segmentation Framework 🎯
+   
 Dual-Track Management Approach:
 
 Track A: High-Volume Vendors (Top 10)
