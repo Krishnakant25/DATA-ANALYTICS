@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Database & data files
+*.db
+*.csv
+uv.lock
+.python-version
+
+# Generated outputs
+mcp_outputs/
+
+# API keys
+.env
